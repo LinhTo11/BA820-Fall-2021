@@ -15,11 +15,14 @@ from sklearn.metrics import pairwise_distances
 from sklearn.preprocessing import StandardScaler
 
 # our dataset
-SQL = "SELECT * from `questrom.datasets.mtcars`"
-YOUR_BILLING_PROJECT = "questrom"
-cars = pd.read_gbq(SQL, YOUR_BILLING_PROJECT)
+# SQL = "SELECT * from `questrom.datasets.mtcars`"
+# YOUR_BILLING_PROJECT = "questrom"
+# cars = pd.read_gbq(SQL, YOUR_BILLING_PROJECT)
+cars = pd.read_csv('C:/Users/LinhTo/Desktop/BU/Class - Teacher/BA 820/BA820-Fall-2021/datasets/cars.csv')
+
 
 # what do we have
+cars.head()
 type(cars)
 cars.shape
 
